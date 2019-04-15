@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<%!
+	String str1="전역변수" %>
+	<%1
+		public String getStr(){
+		return str1;
+		}
+	%>
+	
+	<%String str=2"지역변수1";
+	<%String str3="지역변수2;
+<hr>
+<% String str3 = "지역변수";
+자바 스크립트에서 선언한 변수는 str2sms <%=%><ar>
+</body>
+</html>
