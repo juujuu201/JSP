@@ -11,6 +11,7 @@
 	request.setCharacterEncoding("UTF-8");
 	int number=Integer.parseInt(request.getParameter("number"));
 	
+	
 	if(number<=10){
 %>
 입력받은 숫자는 <%=number %>입니다
