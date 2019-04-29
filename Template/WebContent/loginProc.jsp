@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<form action="loginProc1.jsp" method="post">
 <table>
 <tr>
 <td>아이디 : </td>
@@ -23,5 +24,6 @@
  </td>
 </tr>
 </table>
+</form>
 </body>
 </html>
