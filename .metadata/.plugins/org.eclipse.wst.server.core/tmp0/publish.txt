@@ -1,6 +1,6 @@
 #Tomcat publish data
-#Tue Apr 30 15:30:27 KST 2019
+#Thu May 02 18:40:15 KST 2019
 org.eclipse.jst.jee.server\:Template=C\:\\JSP_Study\\apache-tomcat-9.0.5\\wtpwebapps\\Template
-org.eclipse.jst.jee.server\:StartJSP=C\:\\JSP_Study\\apache-tomcat-9.0.5\\wtpwebapps\\StartJSP
 org.eclipse.jst.jee.server\:Chapter05=C\:\\JSP_Study\\apache-tomcat-9.0.5\\wtpwebapps\\Chapter05
+org.eclipse.jst.jee.server\:StartJSP=C\:\\JSP_Study\\apache-tomcat-9.0.5\\wtpwebapps\\StartJSP
 org.eclipse.jst.jee.server\:Login_Project=C\:\\JSP_Study\\apache-tomcat-9.0.5\\wtpwebapps\\Login_Project
