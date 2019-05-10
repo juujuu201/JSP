@@ -22,15 +22,15 @@
 <body>
 <center>
 	<form>
-		<select style="background:url('img/icon_local.png') no-repeat center left;background-size:8%;width:16.7%;padding:1% 1%;border:solid 1px black;border-top:solid 2px #72ebc8;margin-top:-100px;margin-right:-0.1%">
+		<select style="background:url('https://www.bikeseoul.com/images/kr/icon/icon_local.png') no-repeat center left;background-size:13%;width:9%;padding:1% 2%;border:solid 1px black;border-top:solid 2px #72ebc8;margin-top:-100px;margin-right:-0.1%">
 			<option>&nbsp;&nbsp;지역구</option>
 			<option>&nbsp;&nbsp;대여소명</option>
 			<option>&nbsp;&nbsp;대여소번호</option>
 		</select>
-		<input type="text" size=100 style="vertical-align:middle;width:45.8%;padding:1% 2% 1% 1%;placeholder:'원하는 지역이 어디신가요?';background:url('img/icon_search.png') no-repeat center right;background-size:3%;border:solid 1px black;border-top:solid 2px #72ebc8;">
+		<input type="text" size=100 placeholder="원하시는 지역이 어디신가요?" style="vertical-align:middle;width:40%;padding:1% 2% 1% 1%;placeholder:'원하는 지역이 어디신가요?';background:url('img/ic_search.png') no-repeat center right;background-size:3%;border:solid 1px black;border-top:solid 2px #72ebc8;">
 	</form>
 	</span>
-	<div id="map" style="vertical-align:middle;width:1000px;height:600px;margin-bottom:30%;"></div>
+	<div id="map" style="vertical-align:middle;width:1000px;height:600px;"></div>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3286e4b01e84befc9b9243810d972df7"></script>
 	<script>
 		
@@ -42,6 +42,45 @@
 
 	var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 	 
+	var imageSrc = 'img/icon_b2.png', // 마커이미지의 주소입니다    
+    imageSize = new daum.maps.Size(14, 19), // 마커이미지의 크기입니다
+    imageOption = {offset: new daum.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+    
+ // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+    var markerImage = new daum.maps.MarkerImage(imageSrc, imageSize, imageOption); // 마커가 표시될 위치입니다
+
+    
+	var geoimageSrc = 'img/icon_position.png', // 마커이미지의 주소입니다    
+	geoimageSize = new daum.maps.Size(14, 19), // 마커이미지의 크기입니다
+	geoimageOption = {offset: new daum.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+    
+ // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+    var geomarkerImage = new daum.maps.MarkerImage(geoimageSrc, geoimageSize, geoimageOption); // 마커가 표시될 위치입니다
+
+	
+    if (navigator.geolocation) {
+        
+        // GeoLocation을 이용해서 접속 위치를 얻어옵니다
+        navigator.geolocation.getCurrentPosition(function(position) {
+            
+            var geolat = position.coords.latitude, // 위도
+                geolon = position.coords.longitude; // 경도
+            
+            var geolocPosition = new daum.maps.LatLng(geolat, geolon), // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성합니다
+                geoImage=geomarkerImage; 
+            
+            // 마커와 인포윈도우를 표시합니다
+            displayMarker(geolocPosition);
+                
+          });
+        
+    } else { // HTML5의 GeoLocation을 사용할 수 없을때 마커 표시 위치와 인포윈도우 내용을 설정합니다
+        
+        var geolocPosition = new daum.maps.LatLng(37.466324, 126.9307193),    
+            
+        displayMarker(geolocPosition);
+    }
+    
 	// 마커를 표시할 위치와 내용을 가지고 있는 객체 배열입니다 
 	var positions = [
 	    {
@@ -640,7 +679,8 @@
 	    // 마커를 생성합니다
 	    var marker = new daum.maps.Marker({
 	        map: map, // 마커를 표시할 지도
-	        position: positions[i].latlng // 마커의 위치
+	        position: positions[i].latlng,// 마커의 위치
+	        image:markerImage
 	    });
 
 	    // 마커에 표시할 인포윈도우를 생성합니다 
@@ -669,6 +709,18 @@
 	    };
 	}
 
+	function displayMarker(geolocPosition) {
+
+	    // 마커를 생성합니다
+	    var geomarker = new daum.maps.Marker({  
+	        map: map, 
+	        position: geolocPosition
+	    }); 
+	    
+	    // 지도 중심좌표를 접속위치로 변경합니다
+	    map.setCenter(geolocPosition);      
+	}    
+	
 		</script>
 </center>
 </body>
