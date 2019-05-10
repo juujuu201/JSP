@@ -335,8 +335,306 @@
 	    {
 	        content: '<div>138. 신촌동 제1공영주차장 앞</div>', 
 	        latlng: new daum.maps.LatLng(37.559177, 126.934525)
+	    },
+	    {
+	        content: '<div>139. 연세대 정문 건너편</div>', 
+	        latlng: new daum.maps.LatLng(37.559795, 126.934479)
+	    },
+	    {
+	        content: '<div>140. 이화여대 후문</div>', 
+	        latlng: new daum.maps.LatLng(37.559872, 126.940094)
+	    },
+	    {
+	        content: '<div>141. 연대 대운동장 옆</div>', 
+	        latlng: new daum.maps.LatLng(37.562382, 126.932648)
+	    },
+	    {
+	        content: '<div>200. 국회의원회관</div>', 
+	        latlng: new daum.maps.LatLng(37.528728, 126.914925)
+	    },
+	    {
+	        content: '<div>201. 진미파라곤 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.531239, 126.921333)
+	    },
+	    {
+	        content: '<div>202. 국민일보 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.528816, 126.924530)
+	    },
+	    {
+	        content: '<div>203. 국회의사당역 5번출구 옆</div>', 
+	        latlng: new daum.maps.LatLng(37.528164, 126.917023)
+	    },
+	    {
+	        content: '<div>204. 국회의사당역 3번출구 옆</div>', 
+	        latlng: new daum.maps.LatLng(37.528057, 126.918701)
+	    },
+	    {
+	        content: '<div>205. 산업은행 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.526264, 126.920509)
+	    },
+	    {
+	        content: '<div>206. KBS 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.524666, 126.918022)
+	    },
+	    {
+	        content: '<div>207. 여의나루역 1번출구 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.526989, 126.932098)
+	    },
+	    {
+	        content: '<div>209. 유진투자증권 빌딩 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.524612, 126.927834)
+	    },
+	    {
+	        content: '<div>210. 신한금융투자후문 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.525093, 126.924187)
+	    },
+	    {
+	        content: '<div>211. 여의도역 4번출구 옆</div>', 
+	        latlng: new daum.maps.LatLng(37.522228, 126.924637)
+	    },
+	    {
+	        content: '<div>212. 여의도역 1번출구 옆</div>', 
+	        latlng: new daum.maps.LatLng(37.521362, 126.923462)
+	    },
+	    {
+	        content: '<div>213. KT 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.521908, 126.918953)
+	    },
+	    {
+	        content: '<div>214. 금융감독원 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.523022, 126.920837)
+	    },
+	    {
+	        content: '<div>215. 여의도고교 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.524837, 126.934906)
+	    },
+	    {
+	        content: '<div>216. 삼부아파트1동 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.523491, 126.932899)
+	    },
+	    {
+	        content: '<div>217. NH농협은행 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.522079, 126.930367)
+	    },
+	    {
+	        content: '<div>218. 증권거래소 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.523277, 126.929237)
+	    },
+	    {
+	        content: '<div>219. 롯데캐슬엠파이어 옆</div>', 
+	        latlng: new daum.maps.LatLng(37.520096, 126.926163)
+	    },
+	    {
+	        content: '<div>220. 미성아파트 A동 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.519363, 126.926048)
+	    },
+	    {
+	        content: '<div>221. 여의도초교 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.522675, 126.937790)
+	    },
+	    {
+	        content: '<div>222. 시범아파트버스정류장 옆</div>', 
+	        latlng: new daum.maps.LatLng(37.520271, 126.938881)
+	    },
+	    {
+	        content: '<div>223. 진주아파트상가 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.519314, 126.933167)
+	    },
+	    {
+	        content: '<div>224. 롯데캐슬 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.520088, 126.932365)
+	    },
+	    {
+	        content: '<div>225. 앙카라공원 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.517368, 126.929253)
+	    },
+	    {
+	        content: '<div>226. 샛강역 1번출구 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.517765, 126.928413)
+	    },
+	    {
+	        content: '<div>300. 정동사거리</div>', 
+	        latlng: new daum.maps.LatLng(37.568050, 126.969231)
+	    },
+	    {
+	        content: '<div>301. 경복궁역 7번출구 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.575794, 126.971451)
+	    },
+	    {
+	        content: '<div>302. 경복궁역 4번출구 뒤</div>', 
+	        latlng: new daum.maps.LatLng(37.575947, 126.974060)
+	    },
+	    {
+	        content: '<div>304. 광화문역 2번출구 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.572487, 126.977501)
+	    },
+	    {
+	        content: '<div>305. 종로구청 옆</div>', 
+	        latlng: new daum.maps.LatLng(37.572582, 126.978355)
+	    },
+	    {
+	        content: '<div>306. 광화문역 7번출구 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.570808, 126.976433)
+	    },
+	    {
+	        content: '<div>307. 서울역사박물관 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.570000, 126.971100)
+	    },
+	    {
+	        content: '<div>308. 광화문 S타워 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.569969, 126.973938)
+	    },
+	    {
+	        content: '<div>309. 광화문역 6번출구 옆</div>', 
+	        latlng: new daum.maps.LatLng(37.569889, 126.976456)
+	    },
+	    {
+	        content: '<div>310. 청계광장 옆</div>', 
+	        latlng: new daum.maps.LatLng(37.568878, 126.977470)
+	    },
+	    {
+	        content: '<div>311. 서울광장 옆</div>', 
+	        latlng: new daum.maps.LatLng(37.566612, 126.977470)
+	    },
+	    {
+	        content: '<div>312. 시청역 1번출구 뒤</div>', 
+	        latlng: new daum.maps.LatLng(37.564674, 126.976738)
+	    },
+	    {
+	        content: '<div>313. 서울역 광장 파출소 옆</div>', 
+	        latlng: new daum.maps.LatLng(37.556961, 126.971771)
+	    },
+	    {
+	        content: '<div>314. 국립현대미술관</div>', 
+	        latlng: new daum.maps.LatLng(37.579910, 126.980301)
+	    },
+	    {
+	        content: '<div>315. 신한은행 안국역지점 옆</div>', 
+	        latlng: new daum.maps.LatLng(37.575916, 126.983246)
+	    },
+	    {
+	        content: '<div>316. 종각역 1번출구 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.570396, 126.981789)
+	    },
+	    {
+	        content: '<div>318. 광교사거리 남측</div>', 
+	        latlng: new daum.maps.LatLng(37.568527, 126.982552)
+	    },
+	    {
+	        content: '<div>320. 을지로입구역 4번출구 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.566223, 126.983589)
+	    },
+	    {
+	        content: '<div>321. 한국외환은행 본점 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.565464, 126.984138)
+	    },
+	    {
+	        content: '<div>322. 명동성당 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.564377, 126.986732)
+	    },
+	    {
+	        content: '<div>323. 서울 중앙우체국 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.561794, 126.981583)
+	    },
+	    {
+	        content: '<div>324. 신세계백화점 본점 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.561176, 126.980942)
+	    },
+	    {
+	        content: '<div>326. 안국역 5번출구 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.576241, 126.986160)
+	    },
+	    {
+	        content: '<div>327. 낙원상가 옆</div>', 
+	        latlng: new daum.maps.LatLng(37.573650, 126.987320)
+	    },
+	    {
+	        content: '<div>328. 탑골공원 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.570396, 126.98819)
+	    },
+	    {
+	        content: '<div>329. 청계2가 사거리 옆</div>', 
+	        latlng: new daum.maps.LatLng(37.568329, 126.987991)
+	    },
+	    {
+	        content: '<div>330. 청계천 한빛광장</div>', 
+	        latlng: new daum.maps.LatLng(null, null)
+	    },
+	    {
+	        content: '<div>331. 을지로2가 사거리 북측</div>', 
+	        latlng: new daum.maps.LatLng(37.566322, 126.987030)
+	    },
+	    {
+	        content: '<div>332. 을지로2가 사거리 남측</div>', 
+	        latlng: new daum.maps.LatLng(37.565990, 126.987793)
+	    },
+	    {
+	        content: '<div>333. 창덕궁 매표소 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.577606, 126.993401)
+	    },
+	    {
+	        content: '<div>334. 종로3가역 2번출구 뒤</div>', 
+	        latlng: new daum.maps.LatLng(37.570599, 126.991791)
+	    },
+	    {
+	        content: '<div>335. 종로3가역 15번출구 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.570198, 126.991257)
+	    },
+	    {
+	        content: '<div>336. 티마크 호텔 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.562618, 126.992836)
+	    },
+	    {
+	        content: '<div>337. 창경궁 입구</div>', 
+	        latlng: new daum.maps.LatLng(37.578979, 126.996475)
+	    },
+	    {
+	        content: '<div>338. 세운스퀘어 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.571331, 126.997528)
+	    },
+	    {
+	        content: '<div>339. 종로4가 사거리</div>', 
+	        latlng: new daum.maps.LatLng(37.571068, 126.998192)
+	    },
+	    {
+	        content: '<div>340. 혜화동 로터리</div>', 
+	        latlng: new daum.maps.LatLng(37.585629, 127.000679)
+	    },
+	    {
+	        content: '<div>341. 혜화역 3번출구 뒤</div>', 
+	        latlng: new daum.maps.LatLng(37.582050, 127.001740)
+	    },
+	    {
+	        content: '<div>342. 대학로 마로니에공원</div>', 
+	        latlng: new daum.maps.LatLng(null, null)
+	    },
+	    {
+	        content: '<div>343. 예일빌딩(율곡로) 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.575432, 127.004982)
+	    },
+	    {
+	        content: '<div>344. 성균관대 E하우스 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.574036, 127.006721)
+	    },
+	    {
+	        content: '<div>345. 서울보증보험본사 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.573307, 127.000710)
+	    },
+	    {
+	        content: '<div>346. 남평화시장</div>', 
+	        latlng: new daum.maps.LatLng(37.568825, 127.010048)
+	    },
+	    {
+	        content: '<div>347. 동대문역사문화공원역 9번출구 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.565331, 127.007843)
+	    },
+	    {
+	        content: '<div>400. 상암한화오벨리스크 1차 앞</div>', 
+	        latlng: new daum.maps.LatLng(37.587524, 126.883003)
 	    }
+	    
 	];
+	
 
 	for (var i = 0; i < positions.length; i ++) {
 	    // 마커를 생성합니다
