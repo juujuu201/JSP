@@ -19,8 +19,8 @@
 		text-align:center;
 	}
 	a, a:hover, a:visited, a:active, a:link{
-		font-size:1.4em;
-		text-weight:bold;
+		font-size:1.2em;
+		font-weight:bold;
 		color:black;
 		text-decoration:none;
 	}
@@ -32,10 +32,10 @@
 	<td class="menutd" style="width:8%;"></td>
 	<td class="menutd"><a href="index.jsp#bike_info">사업소개</a></td>
 	<td class="menutd"><a href="borrow.jsp">대여소 조회</a></td>
-	<td class="menutd">이용권 구매</td>
+	<td class="menutd"><a href="voucher.jsp">이용권 구매</a></td>
 	<td class="menutd"><a href="opinion.jsp">시민의견수렴</a></td>
-	<td class="menutd">공지사항</td>
-	<td class="menutd">안전수칙</td>
+	<td class="menutd"><a href="board.jsp">공지사항</a></td>
+	<td class="menutd"><a href="safety.jsp">안전수칙</a></td>
 </tr>
 </table>
 <hr style="border:solid 1.5px #72ebc8;">

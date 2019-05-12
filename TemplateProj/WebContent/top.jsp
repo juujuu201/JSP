@@ -32,9 +32,9 @@
 	</td>
 	<td id="space"></td>
 	<td>
-		<b>로그인</b>&nbsp;&nbsp;
+		<a href="login.jsp"><b>로그인</b></a>&nbsp;&nbsp;
 		<b>회원가입</b>&nbsp;&nbsp;
-		알림&nbsp;&nbsp;
+		<a href="https://www.bikeseoul.com/app/mybike/getPushHistory.do">알림&nbsp;&nbsp;</a>
 		이용안내
 	</td>
 </tr>

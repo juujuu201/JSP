@@ -13,16 +13,16 @@
 	}
 </style>
 </head>
-<body style="font-size:0.9em;">
-<hr style="border:solid 1px #efefef;margin-top:56.5%;">
+<body style="font-size:0.9em;margin-top:0;padding-top:0;">
+<hr style="border:solid 1px #ececec;">
 	<center>
 	
-	<table style="position:absolute;left:10%;top:370%;border-spacing:0px;width:80%;margin-bottom:50px;">
+	<table style="border-spacing:0px;width:80%;margin-bottom:50px;">
 		
 		<tr>
 			<td>
-				<font style="color:red;font-weight:bold;">이용약관</font> <font class="stick">|</font> 
-				<font style="font-weight:bold;">개인정보처리방침</font> <font class="stick">|</font>
+				<a href="term.jsp"><font style="color:red;font-weight:bold;">이용약관</font></a> <font class="stick">|</font> 
+				<a href="term.jsp?id=div2"><font style="font-weight:bold;">개인정보처리방침</font></a> <font class="stick">|</font>
 				<font style="font-weight:bold;">보험안내</font> <font class="stick">|</font>
 				<font style="font-weight:bold;">도움주신 분</font> 			
 			</td>
