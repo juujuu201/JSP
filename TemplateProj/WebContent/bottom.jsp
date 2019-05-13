@@ -23,8 +23,8 @@
 			<td>
 				<a href="term.jsp"><font style="color:red;font-weight:bold;">이용약관</font></a> <font class="stick">|</font> 
 				<a href="term.jsp?id=div2"><font style="font-weight:bold;">개인정보처리방침</font></a> <font class="stick">|</font>
-				<font style="font-weight:bold;">보험안내</font> <font class="stick">|</font>
-				<font style="font-weight:bold;">도움주신 분</font> 			
+				<a href="https://www.bikeseoul.com/app/use/moveUseMenuInsurance.do"><font style="font-weight:bold;">보험안내</font></a> <font class="stick">|</font>
+				<a href="https://www.bikeseoul.com/customer/donor/donorList.do"><font style="font-weight:bold;">도움주신 분</font></a> 			
 			</td>
 			<td rowspan=3 style="width:7%;border-right-color:lightgray;border-right-style:solid;border-right-width:1px;"></td>
 			<td rowspan=3 valign=middle align=center>

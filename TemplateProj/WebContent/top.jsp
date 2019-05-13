@@ -23,19 +23,32 @@
 </style>
 </head>
 <body>
+
 <table id="top">
 <tr>
 	<td>
-		ENGLISH&nbsp;&nbsp;
-		中國語&nbsp;&nbsp;
-		日本語
+		<a href="https://www.bikeseoul.com:447/main.do?lang=en">ENGLISH&nbsp;&nbsp;</a>
+		<a href="https://www.bikeseoul.com:447/main.do?lang=zh">中國語&nbsp;&nbsp;</a>
+		<a href="https://www.bikeseoul.com:447/main.do?lang=ja">日本語</a>
 	</td>
 	<td id="space"></td>
 	<td>
-		<a href="login.jsp"><b>로그인</b></a>&nbsp;&nbsp;
-		<b>회원가입</b>&nbsp;&nbsp;
-		<a href="https://www.bikeseoul.com/app/mybike/getPushHistory.do">알림&nbsp;&nbsp;</a>
-		이용안내
+	<%
+	if(session.getAttribute("id")==null){
+%>
+<a href="login.jsp"><b>로그인</b></a>&nbsp;&nbsp;
+<%
+	}
+	else{
+		session.removeAttribute("id");
+		response.sendRedirect("login.jsp");
+%>
+		<a href="index.jsp"><b>로그아웃</b></a>&nbsp;&nbsp;
+		
+<%} %>
+		<a href="signup.jsp"><b>회원가입</b></a>&nbsp;&nbsp;
+		<a href="notice.jsp">알림&nbsp;&nbsp;</a>
+		<a href="https://www.bikeseoul.com/info/infoReg.do">이용안내</a>
 	</td>
 </tr>
 </table>

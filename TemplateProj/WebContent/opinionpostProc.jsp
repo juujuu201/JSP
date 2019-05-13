@@ -35,7 +35,7 @@
 		</tr>
 		<tr>
 			<td style="padding-left:1%;border-top:solid 1px lightgray;"><b>아이디</b></td>
-			<td style="border-top:solid 1px lightgray;"><input name="id" type="text" size=92px style="padding:1%;margin-left:1%;">
+			<td style="border-top:solid 1px lightgray;"><input name="idd" type="text" size=92px style="padding:1%;margin-left:1%;">
 		</tr>
 		<tr>
 			<td style="padding-left:1%;border-top:solid 1px lightgray;"><b>내용</b></td>

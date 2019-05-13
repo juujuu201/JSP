@@ -1,3 +1,7 @@
+<!--
+시민의견수렴 목록 페이지
+(저장된 게시물 제목, 작성자 불러와서 뿌려주기)
+-->
 <%@page import="java.io.BufferedReader"%>
 <%@page import="java.io.FileReader"%>
 <%@page import="java.text.DateFormat"%>
@@ -35,33 +39,34 @@ padding:10px;}
 		</tr>
 		<%
 		String dirPath=application.getRealPath("/WEB-INF/opinion");
-		String realfilename;
-		String writer;
-		String file;
-		
+	
 		File dir = new File(dirPath);
 		String fileNames[]=dir.list();
 		%>
-		
 		<%
 			for(String filename : fileNames){ 
-				String FilePath = application.getRealPath("/WEB-INF/opinion/"+filename);
-				BufferedReader reader = new BufferedReader(new FileReader(FilePath));
+				String file="", writer="";
 				
-				int cnt=0;
-				while(true){
-					String str = reader.readLine();
-					if(cnt==0) {
-						realfilename=str;
-						file=filename.substring(0,realfilename.indexOf("."));
-					}
-					if(cnt==2) writer=str;
-					cnt++;
-				}		
 			%>
 			<tr style="border-bottom:solid 1px lightgray;">
-			<td><a href="opinionpost.jsp?NAME<%=file %>"><%=realfilename %></a></td>
-			<td align="center">답변대기</td>
+			<%
+			String FilePath = application.getRealPath("/WEB-INF/opinion/"+filename);
+			BufferedReader reader = new BufferedReader(new FileReader(FilePath));
+			
+			int cnt=0;
+			while(true){
+				String str = reader.readLine();
+				if(str==null) break;
+				if(cnt==0) file=str;
+				else if(cnt==2) writer=str; 
+				
+				cnt++;
+				System.out.println(str);
+			}//while
+			
+			%>
+			<td><a href="opinionshowpost.jsp?NAME=<%=filename %>" style="font-weight:normal;font-size:1em;"><%=file %></a><br></td>
+			<td align="center">답변 대기</td>
 			<td align="center"><%=writer %></td>
 			</tr>
 			<%

@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <jsp:forward page="indexProc.jsp" >							
 	
-		<jsp:param name="CONTENTPAGE" value="voucherProc.jsp" />				
+	<jsp:param name="CONTENTPAGE" value="signupformProc.jsp" />				
  </jsp:forward>
 
  
