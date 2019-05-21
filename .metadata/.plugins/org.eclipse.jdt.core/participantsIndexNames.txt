@@ -13,6 +13,8 @@ C:\JSP_Study\Project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\34884
 \Login_Project\src
 C:\JSP_Study\Project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3516606365.index
 \Chapter06\src
+C:\JSP_Study\Project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1245604850.index
+\Chapter07\src
 C:\JSP_Study\Project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2926312857.index
 \Test\src
 C:\JSP_Study\Project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1924670510.index
