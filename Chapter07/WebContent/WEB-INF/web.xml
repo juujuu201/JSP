@@ -31,4 +31,19 @@
   	<servlet-name>xxxx</servlet-name>
   	<url-pattern>/mirim.do</url-pattern>
   </servlet-mapping>
+  
+  
+  <!-- application.jsp -->
+  <!-- 전체가 공유해서 사용 -->
+  <context-param>
+  	<description>로깅여부</description><!-- 주석 -->
+  	<param-name>logEnabled</param-name>
+  	<param-value>true</param-value>
+  </context-param>
+  
+  <context-param>
+  	<description>디버깅레벨</description><!-- 주석 -->
+  	<param-name>debugLevel</param-name>
+  	<param-value>5</param-value>
+  </context-param>
 </web-app>
