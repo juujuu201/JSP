@@ -21,7 +21,11 @@ C:\JSP_Study\Project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\29263
 \Test\src
 C:\JSP_Study\Project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3811597304.index
 \Chapter10\src
+C:\JSP_Study\Project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\623409305.index
+\EL_Study\src
 C:\JSP_Study\Project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\950727811.index
 \Chapter08\src
+C:\JSP_Study\Project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2305229051.index
+\JSTL_Study\src
 C:\JSP_Study\Project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1924670510.index
 \Template\src
