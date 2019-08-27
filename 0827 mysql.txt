@@ -1,0 +1,114 @@
+C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin>mysql -u root -p
+Enter password: ****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 5
+Server version: 5.5.32 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mirim              |
+| mysql              |
+| performance_schema |
+| test               |
++--------------------+
+5 rows in set (0.00 sec)
+
+mysql> use mirim
+Database changed
+mysql> exit
+Bye
+
+C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin>mysql -u root -p mirim
+Enter password: ****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 6
+Server version: 5.5.32 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> grant select, insert, update, delete, create, drop, alter
+    -> on mirim.* to 'test'@'localhost'
+    -> identified by '1234';
+Query OK, 0 rows affected (0.00 sec)
+mysql> exit
+Bye
+
+C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin>mysql -u test -p mirim
+Enter password: ****
+
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 7
+Server version: 5.5.32 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+mysql> show tables;
+Empty set (0.00 sec)
+
+mysql> create table class(
+    -> bun int not null primary key,
+    -> name varchar(20) not null,
+    -> age int not null,
+    -> email varchar(20),
+    -> address varchar(50),
+    -> hobby varchar(30),
+    -> special varchar(30),
+    -> etc varchar(50));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> show tables;
++-----------------+
+| Tables_in_mirim |
++-----------------+
+| class           |
++-----------------+
+1 row in set (0.02 sec)
+
+mysql> desc class;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| bun     | int(11)     | NO   | PRI | NULL    |       |
+| name    | varchar(20) | NO   |     | NULL    |       |
+| age     | int(11)     | NO   |     | NULL    |       |
+| email   | varchar(20) | YES  |     | NULL    |       |
+| address | varchar(50) | YES  |     | NULL    |       |
+| hobby   | varchar(30) | YES  |     | NULL    |       |
+| special | varchar(30) | YES  |     | NULL    |       |
+| etc     | varchar(50) | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+8 rows in set (0.00 sec)
+
+mysql> insert into class
+    -> values(3611,'이소현',19,'lee@naver.com', '서울시 용산구', '음악 감상', '달리기', '얌전한 척 하지만 성깔이 있음.  조심해야 함. 친구로서 한번 고민해야 함');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from class;
++------+--------+-----+---------------+---------------+-----------+---------+----------------------------------------------------------------------+
+| bun  | name   | age | email         | address       | hobby     | special | etc                                                                  |
++------+--------+-----+---------------+---------------+-----------+---------+----------------------------------------------------------------------+
+| 3611 | 이소현 |  19 | lee@naver.com | 서울시 용산구 | 음악 감상 | 달리기  | 얌전한 척 하지만 성깔이 있음. 조심해야 함. 친구로서 한번 고민해야 함 |
++------+--------+-----+---------------+---------------+-----------+---------+----------------------------------------------------------------------+
+1 row in set (0.00 sec)
