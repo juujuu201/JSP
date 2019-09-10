@@ -17,6 +17,8 @@ C:\JSP_Study\Project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\35166
 \Chapter06\src
 C:\JSP_Study\Project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1245604850.index
 \Chapter07\src
+C:\JSP_Study\Project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3432255503.index
+\DBCP_Project\src
 C:\JSP_Study\Project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2926312857.index
 \Test\src
 C:\JSP_Study\Project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2023036823.index

@@ -37,6 +37,7 @@
          UserDatabaseRealm to authenticate users
     -->
     <Resource auth="Container" description="User database that can be updated and saved" factory="org.apache.catalina.users.MemoryUserDatabaseFactory" name="UserDatabase" pathname="conf/tomcat-users.xml" type="org.apache.catalina.UserDatabase"/>
+    <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxWait="5000" name="basicjsp" password="1234" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/mirim" username="test"/>
   </GlobalNamingResources>
 
   <!-- A "Service" is a collection of one or more "Connectors" that share
@@ -149,7 +150,21 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Chapter06" path="/Chapter06" reloadable="true" source="org.eclipse.jst.jee.server:Chapter06"/><Context docBase="Chapter07" path="/Chapter07" reloadable="true" source="org.eclipse.jst.jee.server:Chapter07"/><Context docBase="Chapter08" path="/Chapter08" reloadable="true" source="org.eclipse.jst.jee.server:Chapter08"/><Context docBase="Chapter09" path="/Chapter09" reloadable="true" source="org.eclipse.jst.jee.server:Chapter09"/><Context docBase="Chapter10" path="/Chapter10" reloadable="true" source="org.eclipse.jst.jee.server:Chapter10"/><Context docBase="EL_Study" path="/EL_Study" reloadable="true" source="org.eclipse.jst.jee.server:EL_Study"/><Context docBase="JSTL_Study" path="/JSTL_Study" reloadable="true" source="org.eclipse.jst.jee.server:JSTL_Study"/><Context docBase="Chapter11" path="/Chapter11" reloadable="true" source="org.eclipse.jst.jee.server:Chapter11"/></Host>
+      <Context docBase="Chapter06" path="/Chapter06" reloadable="true" source="org.eclipse.jst.jee.server:Chapter06"/>
+      <Context docBase="Chapter07" path="/Chapter07" reloadable="true" source="org.eclipse.jst.jee.server:Chapter07"/>
+      <Context docBase="Chapter08" path="/Chapter08" reloadable="true" source="org.eclipse.jst.jee.server:Chapter08"/>
+      <Context docBase="Chapter09" path="/Chapter09" reloadable="true" source="org.eclipse.jst.jee.server:Chapter09"/>
+      <Context docBase="Chapter10" path="/Chapter10" reloadable="true" source="org.eclipse.jst.jee.server:Chapter10"/>
+      <Context docBase="EL_Study" path="/EL_Study" reloadable="true" source="org.eclipse.jst.jee.server:EL_Study"/>
+      <Context docBase="JSTL_Study" path="/JSTL_Study" reloadable="true" source="org.eclipse.jst.jee.server:JSTL_Study"/>
+      <Context docBase="Chapter11" path="/Chapter11" reloadable="true" source="org.eclipse.jst.jee.server:Chapter11"/>
+      <Context 
+      	docBase="DBCP_Project" 
+      	path="/DBCP_Project" 
+      	reloadable="true" 
+      	source="org.eclipse.jst.jee.server:DBCP_Project">
+      	<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxWait="5000" name="basicjsp" password="1234" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/mirim" username="test"/>
+      </Context></Host>
     </Engine>
   </Service>
 </Server>
