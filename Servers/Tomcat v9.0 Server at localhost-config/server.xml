@@ -160,7 +160,13 @@
       <Context docBase="Chapter11" path="/Chapter11" reloadable="true" source="org.eclipse.jst.jee.server:Chapter11"/>
       <Context docBase="DBCP_Project" path="/DBCP_Project" reloadable="true" source="org.eclipse.jst.jee.server:DBCP_Project">
       	<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxWait="5000" name="basicjsp" password="1234" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/mirim" username="test"/>
-      </Context><Context docBase="Chapter12" path="/Chapter12" reloadable="true" source="org.eclipse.jst.jee.server:Chapter12"/></Host>
+      </Context>
+      <Context docBase="Chapter12" path="/Chapter12" reloadable="true" source="org.eclipse.jst.jee.server:Chapter12"/>
+      <Context docBase="Login_Project" path="/Login_Project" reloadable="true" source="org.eclipse.jst.jee.server:Login_Project"/>
+      <Context docBase="Project_01" path="/Project_01" reloadable="true" source="org.eclipse.jst.jee.server:Project_01">
+      	<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxWait="5000" name="basicjsp" password="1234" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/mirim" username="test"/>
+      </Context>
+      </Host>
     </Engine>
   </Service>
 </Server>
