@@ -36,6 +36,16 @@
 			return false;
 		}//if
 	}//function checkIt()
+	
+	function openConfirmId(input){
+		if(!input.id.value){
+			alert("아이디를 입력해주세요");
+			input.id.focus();
+			return false;
+		}//if
+		url="confirmId.jsp?id="+input.id.value;
+		open(url,"confirm","toolbar=no, location=no, status=no, menubar=no, scrollbars=no, resizable=no, width=300, height=200");
+	}//function openConfirmId(input)
 	</script>
 </head>
 <body bgcolor="<%=bodyback_c%>">
@@ -54,7 +64,7 @@
 			<td width="200">사용자 ID</td>
 			<td width="400">
 				<input type="text" name="id" size="15">
-				<input type="button" name="confirm_id" value="ID 중복확인">
+				<input type="button" name="confirm_id" value="ID 중복확인" onclick="openConfirmId(this.form)">
 			</td>
 		</tr>
 		<tr>
